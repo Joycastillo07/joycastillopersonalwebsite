@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My Personal Website</title>
+</head>
+<body>
+   <style>
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: sans-serif;
+           text-decoration: none;
+           list-style: none;
+       }
+
+       header{
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           padding: 20px 12%;
+           background:  #0000088e;
+           backdrop-filter: blur(10px);
+           display: flex;
+           justify-content:space-between ;
+           align-items:center ;
+           z-index:100 ;
+       }
+
+       .logo{
+           font-size: 25px;
+           color: white;
+           font-weight: 600;
+           transition: 0.3s ease;
+       }
+
+       .logo:hover{
+           color: orangered;
+           text-shadow: 0 0 25px orangered,
+                       0 0 50px orangered;
+           transition: scale(1,1);
+                       
+       }
+
+       span{
+           color: orangered;
+       }
+
+       .navbar a{
+           font-size: 18px;
+           color: white;
+           font-weight: 500;
+           margin: 0 20px;
+           border-bottom: 3px solid transparent;
+           transition: 0.3s ease;
+       }
+
+       .navbar a:hover,
+       .navbar a.active{
+           color: orangered;
+           border-bottom: 3px solid orangered;
+
+       }
+
+       .contact{
+           padding: 10px 28px;
+           background-color: white;
+           color: black;
+           border: 2px solid transparent;
+           border-radius: 8px;
+           font-size: 16px;
+           letter-spacing: 1px;
+           font-weight: 600;
+           transition: 0.3 ease;
+       }
+
+       .contact:hover{
+           background-color: orangered;
+           box-shadow: 0 0 25px orangered;
+           color: white;
+       }
+
+       .home{
+        width: 100%;
+        min-width: 100vh;
+        background: whitesmoke;
+        display: flex;
+        align-items: center;
+        gap: 7rem;
+        padding: 30px 12% 0;
+        margin-top: 70px;
+       }
+       
+       .home-content{
+        max-width: 800px;
+       }
+
+       .home-content h3{
+        font-size: 42px;
+       }
+
+       .home-content h1{
+        font-size: 52px;
+        line-height: 1.2;
+       }
+
+       .home-content p{
+        font-size: 18px;
+        margin: 25px 0 30px;
+        
+       }
+       .img-box img{
+        border-radius: 50%;
+        width: 510px;
+
+       }
+   </style>
+   <header class="header">
+       <a href="#" class="logo"><span>Lig</span>aya</a>
+
+       <nav class="navbar">
+           <a href="#home" class="active">Home</a>
+           <a href="#aboutme">About Me</a>
+           <a href="#">Achievements</a>
+           <a href="#">Education</a>
+           <a href="#">Blog</a>
+            
+       </nav>
+
+       <a href="contactme.html" class="contact">Contact Me</a>
+
+   </header>
+
+   <section id="home" class="home">
+       <div class="home-content">
+           <h3>Hi</h3>
+
+           <h1>I'm <span>Joy <br></span> a Science Technology Engineering Mathematice (STEM) student</h1>
+
+           
+
+            
+       </div>
+       <div class="img-box">
+           <img src="joy2.jpg" alt="">
+       </div>
+   </section>
+
+   <section id="aboutme" class="home">
+    <div class="home-content">
+        
+
+        <h1> About Me</h1>
+
+        <p><p>Hi! My name is Joy Gonzales Castillo, and I’m from Tanauan City in Batangas. Growing up as an only child, I've always had a lot of time to explore my interests and discover what I truly enjoy. It’s been a blessing in many ways, and I’m close with my family, who’ve always supported me in everything I do.
+            My hobbies are playing online games and crocheting, I'am planning to sell my products soon!
+        </p></p>
+
+         
+    </div>
+    <div class="img-box">
+        <img src="hobbies.png" alt="">
+    </div>
+</section>
+
+
+</body>
+</html>
